@@ -1,11 +1,189 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 body {
-  background-color: lightgreen;
+  background-color: #e0dcdc;
+  overflow: hidden;
+  overflow-y: hidden; /* tirar isso aq depois, foi um lapso mental de minha parte */
 }
+
+#telainicial {
+  overflow-x:visible;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#a0c484;
+  padding: 15px 80px; /*ajustar o tamanho da header é aqui */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /*sombreamento (da uma diferenca eu juro) */
+  position: sticky; /* os proximos 3 sao p ele ficar preso em cima*/
+  z-index: 999;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+nav li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #5e6a33;
+  transition: 0.2s ease;
+}
+
+nav li a:hover,
+nav li a.ativo {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+nav li a.ativo b {
+  /* o negrito da nav, talvez dê p botar uma fonte diferentona aqui*/
+  font-weight: 900;
+}
+
+/* A PARTE A ESQUERDA C TEXTO */
+.infoBioma {
+  position: absolute;
+  left: 0px;
+  width: 30%;
+  padding: 18px;
+  margin-bottom: 10px;
+  overflow: scroll;
+  width: 30%;
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+.infoBioma h2 {
+  padding: 10px;
+}
+.infoBioma p {
+  padding: 4px;
+}
+
+/* A PARTE DA IMAGEM C OS ANIMAIS */
+.ambiente {
+  float: right;
+  top: 15px;
+  width: 70%;
+  height: 100vh;
+}
+
+#floresta {
+  background-image: url(imagens/forest.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cerrado {
+  background-image: url(imagens/cerrado.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#oceano {
+  background-color: lightblue;
+}
+/* DENTRO DA ANTERIOR, CONFIG. DA IMAGEM */
+.animal {
+  cursor: pointer;
+}
+
+#onca {
+  position: relative;
+  top: 40px; 
+  left: 70px;
+}
+
+#capivara {
+  position: relative;
+  top: 100px; 
+  right: 150px;
+  width: 180px;
+  height: 150px;
+}
+
+/* PARTE INTERATIVA QUE SOBE */
+.infoAnimal {
+  height: 40px; /* tamanho inicial da tabela - dá p mudar no javascript */
+  width: 70%;
+  background-color: white;
+  border: solid 1px gray;
+  position: fixed; /*os prox 3 sao p ficar no lugar*/
+  right: 0;
+  bottom: 0;
+  transition: 0.7s;
+}
+
+.infoAnimal a {
+  /* o 'X', esse foi o unico jeito q eu consegui fazer funcionar */
+  text-decoration: none;
+  padding-top: 10px;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 26px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.infoAnimal a:hover {
+  color: #f1f1f1;
+}
+
+.informacoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 45px;
+}
+
+.curiosidades {
+  padding: 20px;
+}
+
+.tabela {
+  padding: auto;
+  justify-self: flex-end;
+  padding: 20px;
+  border: solid 1px black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.tabela td {
+  height: 30px;
+  width: 150px;
+}
+
+.tabela table, th, td {
+  border: 1px solid black;
 }
