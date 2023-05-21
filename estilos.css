@@ -18,15 +18,18 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color:#a0c484;
-  padding: 15px 80px; /*ajustar o tamanho da header é aqui */
-  /*box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); sombreamento (da uma diferenca eu juro) */
+  padding: 5px 50px 5px 50px; /*ajustar o tamanho da header é aqui */
   position: sticky; /* os proximos 3 sao p ele ficar preso em cima*/
   z-index: 999;
   top: 0;
 }
 
+header nav {
+  line-height: 100%;
+}
+
 #logo img {
-  width: 17%;
+  width: 20%;
 }
 
 nav {
@@ -218,7 +221,7 @@ footer {
 .telainicial h1 {
   font-family: 'Rampart One', cursive;
   font-size: 50px;
-  line-height: 90%;
+  line-height: 100%;
 }
 .telainicial p {
   font-size: 20px;
@@ -251,10 +254,6 @@ footer {
 
 #sobrenos {
   margin: 5%;
-  float: left;
-}
-
-#sobrenos h1 {
   float: left;
 }
 
