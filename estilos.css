@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Bungee+Shade&family=Rampart+One&display=swap');
+/*tem tres fontes aq em cima, usei no negrito na pag inic. mas da pra mudar */
 
 body {
   background-color: #e0dcdc;
@@ -8,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Baloo 2', sans-serif;
 }
 
 header {
@@ -50,7 +52,7 @@ nav li a.ativo {
 nav li a.ativo b {
   /* o negrito da nav, talvez dê p botar uma fonte diferentona aqui*/
   font-weight: 900;
-  
+  font-family: 'Rampart One', cursive;
 }
 
 /* A PARTE A ESQUERDA C TEXTO */
@@ -203,12 +205,14 @@ footer {
   align-items:center;
 }
 .telainicial h1 {
-  font-family: 'Righteous', cursive;
+  font-family: 'Rampart One', cursive;
   font-size: 50px;
   line-height: 90%;
 }
 .telainicial p {
   font-size: 20px;
+  font-family: 'Baloo 2', cursive;
+  
 }
 #exploroubiomas {
   max-width: 35%;
@@ -239,4 +243,5 @@ footer {
 }
 mark {
   background-color: pink;
+  font-family: 'Baloo 2', cursive;
 }
