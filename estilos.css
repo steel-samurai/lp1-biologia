@@ -25,6 +25,10 @@ header {
   top: 0;
 }
 
+#logo img {
+  width: 17%;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -210,6 +214,7 @@ footer {
   justify-content:center;
   align-items:center;
 }
+
 .telainicial h1 {
   font-family: 'Rampart One', cursive;
   font-size: 50px;
@@ -243,10 +248,24 @@ footer {
   margin: 20% 10% 10% 5%;
   float: right;
 }
+
 #sobrenos {
   margin: 5%;
   float: left;
 }
+
+#sobrenos h1 {
+  float: left;
+}
+
+#sobrenos a {
+  color: rgb(0, 102, 0);
+}
+
+#sobrenos a:hover {
+  color: #1a1a1a;
+}
+
 mark {
   background-color: pink;
   font-family: 'Baloo 2', cursive;
