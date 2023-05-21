@@ -69,6 +69,7 @@ nav li a.ativo b {
 }
 .infoBioma h2 {
   padding: 10px;
+  font-family: 'Rampart One', cursive;
 }
 .infoBioma p {
   padding: 4px;
@@ -165,6 +166,7 @@ nav li a.ativo b {
 
 .curiosidades {
   padding: 20px;
+
 }
 
 .tabela {
@@ -183,6 +185,10 @@ nav li a.ativo b {
 
 .tabela table, th, td {
   border: 1px solid black;
+}
+
+b {
+  font-family: 'Rampart One', cursive;
 }
 
 .telainicial {
