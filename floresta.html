@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/patinhafofa.png">
+    <!-- Precisa de um ícone ainda-->
+    <link rel="stylesheet" href="estilos.css">
+    <title>Floresta Amazônica</title>
+</head>
+
+<body>
+    <header>
+        <a id="logo"><img src="imagens/logofinal.png"></a>
+        <nav>
+            <li><a href="index.html"><b>Início</b></a></li>
+            <li><a href="floresta.html" class="ativo">Ecossistema <b>Amazônico</b></a></li>
+            <li><a href="oceano.html">Ecossistema <b>Aquático</b></a></li>
+            <li><a href="cerrado.html">Ecossistema do <b>Cerrado</b></a></li>
+        </nav>
+    </header>
+
+    <div class="infoBioma">
+        <h2>Floresta Amazônica</h2>
+        <!-- Textinho sobre a floresta ficam aqui!! -->
+        <p> Que lugar lindo, não? Aqui, a diversidade de espécies é tão vasta que
+            até os bichos parecem ter um estilo fashionista único! A Amazônia é a <mark>
+                maior floresta tropical do mundo</mark>, além de ter o segundo maior rio de todo
+            o planeta!
+        </p>
+        <p> Tá curioso(a) pra saber quem é a grandona ali do lado? Dá um clique e fica
+            sabendo a identidade misteriosa da nossa amiga.
+        </p>
+        <p> Os animais mais exóticos e extravagantes estão bem aqui, vivendo em plena
+            harmonia até o ser humano chegar… Se você apertar esse botãozinho aí no canto
+            vai ver um pouquinho do que a gente faz com esses pobres e indefesos seres ):
+        </p>
+    </div>
+
+    <div class="ambiente" id="floresta">
+        <!-- animais sao aqui, por enquando vai só um -->
+        <img onclick="abreTabela()" src="imagens/trige.png" class="animal" id="onca">
+    </div>
+
+    <div id="abrivel" class="infoAnimal">
+        <!-- textinho que abre, tá na parte de baixo -->
+        <a onclick="fechaTabela()" id="x">&#10006;</a> <!-- o 10006 é cod. pro X-->
+        <div class="informacoes">
+            <div class="curiosidades">
+                <p><b>Onça Pintada</b> <i>(Phantera onca)</i> é uma espécie
+                    de mamífero carnívoro da família dos felídeos encontrada
+                    nas Américas. É o terceiro maior felino do mundo, após o
+                    tigre e o leão, e o maior do continente americano.</p>
+                <img src="imagens/alisameupelo.jfif">
+            </div>
+            <div class="tabela">
+                <table>
+                    <tr>
+                        <td colspan="2">Características</td>
+                    <tr>
+                        <td>Tempo de vida</td>
+                        <td>12 - 15 anos</td>
+                    </tr>
+                    <tr>
+                        <td>Peso Adulto</td>
+                        <td>56 - 96 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Alimentação</td>
+                        <td>Carnívoro</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
