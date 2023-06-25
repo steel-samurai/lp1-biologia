@@ -21,38 +21,31 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #a0c484;
-  padding: 5px 50px 5px 50px;
-  /*ajustar o tamanho da header é aqui */
-  /* os proximos 3 sao p ele ficar preso em cima*/
-  position: sticky;
+  background-color:#a0c484;
+  padding: 5px 50px 5px 50px; /*ajustar o tamanho da header é aqui */
+  position: sticky; /* os proximos 3 sao p ele ficar preso em cima*/
   z-index: 999;
   top: 0;
-}
-article, #listas {
-  display: flex;
 }
 
 header nav {
   line-height: 100%;
-  display: flex;
 }
 
 #logo img {
-  width: 9em;
+  width: 20%;
 }
 
-nav ul {
+nav {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 nav li {
   list-style: none;
-  padding: 0 1.5em;
+  padding: 0 20px;
   position: relative;
-  box-sizing: border-box;
-  justify-content: center;
 }
 
 nav li a {
@@ -62,32 +55,10 @@ nav li a {
   transition: 0.2s ease;
 }
 
-nav li a:hover, 
+nav li a:hover,
 nav li a.ativo {
   color: #1a1a1a;
   font-weight: 500;
-}
-
-/*unica forma que eu achei de fazer o menu "responsive"*/
-@media (max-width: 700px) {
-  article {
-    width: calc(100% / 2);
-  }
-  nav ul {
-    flex-direction: column;
-    justify-content: space-around;
-  }
-}
-
-@media (max-width: 450px) {
-  article {
-    width: calc(100% / 4);
-  }
-  #listas {
-    flex-direction: column;
-    justify-content: space-around;
-    float: right;
-  }
 }
 
 /* A PARTE A ESQUERDA C TEXTO */
@@ -102,12 +73,10 @@ nav li a.ativo {
   height: 100vh;
   background-color: #f1f1f1;
 }
-
 .infoBioma h2 {
   padding: 10px;
   font-family: 'Rampart One', cursive;
 }
-
 .infoBioma p {
   padding: 4px;
 }
@@ -141,9 +110,14 @@ nav li a.ativo {
 }
 
 #oceano {
-  background-color: lightblue;
+  background-image: url(imagens/oceano.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 /* DENTRO DA ANTERIOR, CONFIG. DA IMAGEM */
 .animal {
   cursor: pointer;
@@ -153,15 +127,21 @@ nav li a.ativo {
   position: relative;
   width: 30%;
   height: auto;
-  top: 70px;
+  top: 70px; 
   left: 70px;
 }
 
 #capivara {
   position: relative;
-  top: 100px;
-  right: 150px;
+  top: 100px; 
+  right: -100px;
   width: 180px;
+  height: auto;
+}
+
+#peixe {
+  position: relative;
+  width: 30%;
   height: auto;
 }
 
@@ -232,11 +212,17 @@ nav li a.ativo {
   width: 150px;
 }
 
-.tabela table,
-th,
-td {
-  border: 1px solid black;
+.tabela table, th, td {
+  border: 2px solid white;
   border-collapse: collapse;
+}
+
+.tabela tr:first-child{
+  background-color: gray;
+  text-transform: uppercase;
+}
+.tabela tr:not(:first-child){
+  background-color: rgb(228, 227, 227);
 }
 
 b {
@@ -258,9 +244,9 @@ footer {
   background-color: #a0c484;
   color: #1a1a1a;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 footer a {
@@ -272,9 +258,8 @@ footer a {
   font-family: 'Rampart One', cursive;
   font-size: 50px;
   line-height: 100%;
-  padding-bottom: 5%;
+  padding-bottom: 5%; 
 }
-
 .telainicial p {
   font-size: 20px;
   font-family: 'Baloo 2', cursive;
@@ -286,7 +271,6 @@ footer a {
   margin-left: 5%;
   word-wrap: break-word;
 }
-
 #exploroubiomas p {
   margin-top: 2%;
   font-size: 20px;
@@ -306,7 +290,36 @@ footer a {
   float: right;
 }
 
+#sobrenos {
+  margin: 5%;
+  float: left;
+}
+
+#sobrenos a {
+  color: rgb(0, 102, 0);
+}
+
+#sobrenos a:hover {
+  color: #1a1a1a;
+}
+
 mark {
   background-color: pink;
   font-family: 'Baloo 2', cursive;
+}
+
+h1 strong {
+  font-family: 'Rampart One', cursive;
+  position: relative;
+  animation: textclip 1.6s linear infinite;
+  background-image: linear-gradient(270deg, #083608 0%, #0392af 29%, #083608 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
