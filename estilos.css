@@ -121,6 +121,13 @@ nav li a.ativo {
 /* DENTRO DA ANTERIOR, CONFIG. DA IMAGEM */
 .animal {
   cursor: pointer;
+  animation: aumentar 1s 4 ease-in-out 3s;
+}
+
+@keyframes aumentar {
+  0% {scale: 1;}
+  50% {scale: 1.05;}
+  100% {scale: 1;}
 }
 
 #onca {
