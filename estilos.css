@@ -281,7 +281,7 @@ td {
   text-transform: uppercase;
 }
 .tabela tr:not(:first-child){
-  background-color: rgb(204, 204, 204);
+  background-color: #CFCFCF;
 }
 
 b {
