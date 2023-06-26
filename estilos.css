@@ -5,6 +5,10 @@ body {
   background-color: #e0dcdc;
 }
 
+body::selection {
+  background-color: lightblue;
+}
+
 * {
   margin: 0;
   padding: 0;
