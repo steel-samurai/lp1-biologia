@@ -176,14 +176,14 @@ nav li a.ativo {
   position: relative;
   width: 30%;
   height: auto;
-  top: 70px;
+  top: 120px;
   left: 70px;
 }
 
 #capivara {
   position: relative;
   top: 100px;
-  right: 150px;
+  right: -70px;
   width: 180px;
   height: auto;
 }
@@ -194,6 +194,11 @@ nav li a.ativo {
   height: auto;
 }
 
+#easteregg {
+  width: 23%;
+  height: auto;
+  margin-left: 15px;
+}
 /* PARTE INTERATIVA QUE SOBE */
 .infoAnimal {
   height: 40px;
@@ -254,6 +259,9 @@ nav li a.ativo {
   padding: 30px;
   border-collapse: collapse;
   text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tabela td {
@@ -264,7 +272,7 @@ nav li a.ativo {
 .tabela table,
 th,
 td {
-  border: 1px solid black;
+  border: 3px solid white;
   border-collapse: collapse;
 }
 
@@ -273,7 +281,7 @@ td {
   text-transform: uppercase;
 }
 .tabela tr:not(:first-child){
-  background-color: rgb(228, 227, 227);
+  background-color: rgb(204, 204, 204);
 }
 
 b {
